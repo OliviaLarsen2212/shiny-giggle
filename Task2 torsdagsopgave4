@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        System.out.println("Please type your name:");
+
+        Scanner scanner = new Scanner(System.in);
+        String input =  scanner.nextLine();
+
+        System.out.print("Hello" + input + ". Please type your age");
+
+        int age = scanner.nextInt();
+        System.out.println("You are" + age + "years old");
+
+        int yearsLeftUntilRetirement = 67 - age;
+
+        System.out.println("You have" + yearsLeftUntilRetirement + "years left until retirement");
+
+    }
+
+}
